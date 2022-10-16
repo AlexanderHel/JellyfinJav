@@ -26,10 +26,10 @@ public enum VideoDisplayName
 public class PluginConfiguration : BasePluginConfiguration
 {
     /// <summary>Gets or sets the actress' name order.</summary>
-    public ActressNameOrder ActressNameOrder { get; set; } = ActressNameOrder.LastFirst;
+    public ActressNameOrder ActressNameOrder { get; set; } = ActressNameOrder.FirstLast;
 
     /// <summary>Gets or sets the video's display name.</summary>
-    public VideoDisplayName VideoDisplayName { get; set; } = VideoDisplayName.Title;
+    public VideoDisplayName VideoDisplayName { get; set; } = VideoDisplayName.CodeTitle;
 
     /// <summary>Gets or sets a value indicating whether to enable actress metadata fetching.</summary>
     public bool EnableActresses { get; set; } = true;

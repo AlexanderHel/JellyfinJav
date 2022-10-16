@@ -74,8 +74,11 @@ public class JavlibraryProvider : IRemoteMetadataProvider<Movie, MovieInfo>, IHa
                 Name = Utility.CreateVideoDisplayName(result.Value),
                 ProviderIds = new Dictionary<string, string> { { "Javlibrary", result.Value.Id } },
                 Studios = new[] { result.Value.Studio },
-                Genres = result.Value.Tags.ToArray(),
+                Genres = new string[] { result.Value.Genre },
+                Tags = result.Value.Tags.ToArray(),
+                PremiereDate = result.Value.ReleaseDate,
             },
+
             People = CreateActressList(result.Value),
             HasMetadata = true,
         };

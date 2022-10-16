@@ -33,11 +33,11 @@ public class Plugin : BasePlugin<PluginConfiguration>, IHasWebPages
     {
         return new[]
         {
-                new PluginPageInfo
-                {
-                    Name = this.Name,
-                    EmbeddedResourcePath = string.Format("{0}.config_page.html", this.GetType().Namespace),
-                },
+            new PluginPageInfo
+            {
+                Name = this.Name,
+                EmbeddedResourcePath = string.Format("{0}.config_page.html", this.GetType().Namespace),
+            },
         };
     }
 }
