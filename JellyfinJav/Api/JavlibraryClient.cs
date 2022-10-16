@@ -181,6 +181,8 @@ public static class JavlibraryClient
             releaseDate = default(DateTime);
         }
 
+        int year = releaseDate.Year;
+
         return new Api.Video(
             id: id,
             code: code,
@@ -191,7 +193,8 @@ public static class JavlibraryClient
             studio: studio,
             boxArt: boxArt,
             cover: cover,
-            releaseDate: releaseDate); // TODO
+            releaseDate: releaseDate,
+            year: year);
     }
 
     private static string ReverseName(in string name)

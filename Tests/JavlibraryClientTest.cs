@@ -60,7 +60,8 @@ namespace Tests
                 studio: "S1 NO.1 STYLE",
                 boxArt: "https://pics.dmm.co.jp/mono/movie/adult/ssni230/ssni230pl.jpg",
                 cover: "https://pics.dmm.co.jp/mono/movie/adult/ssni230/ssni230ps.jpg",
-                releaseDate: null); // TODO
+                releaseDate: DateTime.ParseExact("2022-10-18", "yyyy-MM-dd", System.Globalization.CultureInfo.InvariantCulture),
+                year: 2022);
 
             Assert.AreEqual(correct, result);
         }
@@ -80,7 +81,8 @@ namespace Tests
                 studio: "SOD Create",
                 boxArt: "https://pics.dmm.co.jp/mono/movie/adult/1stars126/1stars126pl.jpg",
                 cover: "https://pics.dmm.co.jp/mono/movie/adult/1stars126/1stars126ps.jpg",
-                releaseDate: null); // TODO
+                releaseDate: DateTime.ParseExact("2022-10-18", "yyyy-MM-dd", System.Globalization.CultureInfo.InvariantCulture),
+                year: 2022); // TODO
 
             Assert.AreEqual(result, correct);
         }
@@ -100,7 +102,8 @@ namespace Tests
                 studio: "Prestige",
                 boxArt: "https://pics.dmm.co.jp/mono/movie/adult/118abp002/118abp002pl.jpg",
                 cover: "https://pics.dmm.co.jp/mono/movie/adult/118abp002/118abp002ps.jpg",
-                releaseDate: null); // TODO
+                releaseDate: DateTime.ParseExact("2022-10-18", "yyyy-MM-dd", System.Globalization.CultureInfo.InvariantCulture),
+                year: 2022); // TODO
 
             Assert.AreEqual(result, correct);
         }
@@ -120,7 +123,8 @@ namespace Tests
                 studio: "SOD Create",
                 boxArt: "https://pics.dmm.co.jp/mono/movie/adult/1sdde592/1sdde592pl.jpg",
                 cover: "https://pics.dmm.co.jp/mono/movie/adult/1sdde592/1sdde592ps.jpg",
-                releaseDate: null); // TODO
+                releaseDate: DateTime.ParseExact("2022-10-18", "yyyy-MM-dd", System.Globalization.CultureInfo.InvariantCulture),
+                year: 2022); // TODO
 
             Assert.AreEqual(result, correct);
         }
@@ -140,7 +144,8 @@ namespace Tests
                 studio: "IDEA POCKET",
                 boxArt: "https://pics.dmm.co.jp/mono/movie/adult/iptd041/iptd041pl.jpg",
                 cover: "https://pics.dmm.co.jp/mono/movie/adult/iptd041/iptd041ps.jpg",
-                releaseDate: null); // TODO
+                releaseDate: DateTime.ParseExact("2022-10-18", "yyyy-MM-dd", System.Globalization.CultureInfo.InvariantCulture),
+                year: 2022); // TODO
 
             Assert.AreEqual(result, correct);
         }

@@ -77,6 +77,7 @@ public class JavlibraryProvider : IRemoteMetadataProvider<Movie, MovieInfo>, IHa
                 Genres = new string[] { result.Value.Genre },
                 Tags = result.Value.Tags.ToArray(),
                 PremiereDate = result.Value.ReleaseDate,
+                ProductionYear = result.Value.Year,
             },
 
             People = CreateActressList(result.Value),

@@ -37,6 +37,9 @@ public readonly struct Video
     /// <summary>The date which the video was released.</summary>
     public readonly DateTime? ReleaseDate;
 
+    /// <summary>The year in which the video was released.</summary>
+    public readonly int? Year;
+
     /// <summary>Initializes a new instance of the <see cref="Video" /> struct.</summary>
     /// <param name="id">The website-specific identifier.</param>
     /// <param name="code">The jav code. Ex: ABP-001.</param>
@@ -48,6 +51,7 @@ public readonly struct Video
     /// <param name="boxArt">An absolute url to the boxart.</param>
     /// <param name="cover">An absolute url to the cover image.</param>
     /// <param name="releaseDate">The date which the video was released.</param>
+    /// <param name="year">The year in which the video was released.</param>
     public Video(
         string id,
         string code,
@@ -58,7 +62,8 @@ public readonly struct Video
         string? studio,
         string? boxArt,
         string? cover,
-        DateTime? releaseDate)
+        DateTime? releaseDate,
+        int? year)
     {
         this.Id = id;
         this.Code = code;
@@ -70,6 +75,7 @@ public readonly struct Video
         this.BoxArt = boxArt;
         this.Cover = cover;
         this.ReleaseDate = releaseDate;
+        this.Year = year;
     }
 
     /// <summary>Checks if two Video objects are equal.</summary>
