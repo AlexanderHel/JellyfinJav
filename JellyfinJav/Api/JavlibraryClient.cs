@@ -169,7 +169,7 @@ public static class JavlibraryClient
         var studio = doc.QuerySelector("#video_maker a")?.TextContent;
         var boxArt = doc.QuerySelector("#video_jacket_img")?.GetAttribute("src")?.Insert(0, "https:");
         var cover = boxArt?.Replace("pl.jpg", "ps.jpg");
-        var releaseDateString = doc.QuerySelector("#video_date td")?.TextContent;
+        var releaseDateString = doc.QuerySelector("#video_date .text")?.TextContent;
 
         DateTime releaseDate;
         if (releaseDateString != null)
