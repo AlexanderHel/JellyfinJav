@@ -178,7 +178,7 @@ public static class JavlibraryClient
         }
         else
         {
-            releaseDate = DateTime.ParseExact("0000-00-00", "yyyy-MM-dd", System.Globalization.CultureInfo.InvariantCulture);
+            releaseDate = default(DateTime);
         }
 
         return new Api.Video(
