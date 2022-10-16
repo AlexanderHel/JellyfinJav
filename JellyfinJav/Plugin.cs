@@ -38,7 +38,6 @@ public class Plugin : BasePlugin<PluginConfiguration>, IHasWebPages
                     Name = this.Name,
                     EmbeddedResourcePath = string.Format("{0}.config_page.html", this.GetType().Namespace),
                 },
-            };
+        };
     }
 }
-

@@ -37,7 +37,7 @@ subprocess.run([
     "Release"
 ])
 
-shutil.copy("JellyfinJav/bin/Release/net50/JellyfinJav.dll", f"release/{version}/")
+shutil.copy("JellyfinJav/bin/Release/net6.0/JellyfinJav.dll", f"release/{version}/")
 shutil.copy(f"{Path.home()}/.nuget/packages/anglesharp/0.14.0/lib/netstandard2.0/AngleSharp.dll", f"release/{version}/")
 
 shutil.make_archive(f"release/jellyfinjav_{version}", "zip", f"release/{version}/")
@@ -46,7 +46,7 @@ entry = {
     "checksum": md5(open(f"release/jellyfinjav_{version}.zip", "rb").read()).hexdigest(),
     "changelog": "",
     "targetAbi": f"{targetAbi}.0",
-    "sourceUrl": f"https://github.com/imaginary-upside/JellyfinJav/releases/download/{version}/jellyfinjav_{version}.zip",
+    "sourceUrl": f"https://github.com/Neshura87/JellyfinJav/releases/download/{version}/jellyfinjav_{version}.zip",
     "timestamp": timestamp,
     "version": version
 }

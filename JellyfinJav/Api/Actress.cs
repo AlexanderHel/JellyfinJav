@@ -1,7 +1,7 @@
+namespace JellyfinJav.Api;
+
 using System;
 using System.Text;
-
-namespace JellyfinJav.Api;
 
 /// <summary>A struct for representing a jav actress.</summary>
 public readonly struct Actress

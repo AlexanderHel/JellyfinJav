@@ -22,7 +22,7 @@ public readonly struct Video
     /// <summary>A list of the video's genres, only JAV in this context.</summary>
     public readonly string Genre;
 
-    /// <summary>A list of the video's tags, used instead of genres</summary>
+    /// <summary>A list of the video's tags, used instead of genres.</summary>
     public readonly IEnumerable<string> Tags;
 
     /// <summary>The studio which released the video.</summary>

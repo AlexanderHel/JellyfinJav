@@ -1,5 +1,6 @@
-using MediaBrowser.Model.Plugins;
 namespace JellyfinJav;
+
+using MediaBrowser.Model.Plugins;
 
 /// <summary>Represents the ordering of an actress' first and last name.</summary>
 public enum ActressNameOrder

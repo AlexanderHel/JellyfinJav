@@ -50,7 +50,7 @@ public static class JavlibraryClient
                         Code = resultCode,
                         Id = id,
                     },
-                };
+            };
         }
 
         var videos = new List<VideoResult>();
@@ -171,7 +171,7 @@ public static class JavlibraryClient
         var cover = boxArt?.Replace("pl.jpg", "ps.jpg");
         var releaseDateString = doc.QuerySelector("video_date td")?.TextContent;
 
-        var releaseDate = new DateTime();
+        DateTime releaseDate;
         if (releaseDateString != null)
         {
             releaseDate = DateTime.ParseExact(releaseDateString, "yyyy-MM-dd", System.Globalization.CultureInfo.InvariantCulture);
@@ -180,7 +180,6 @@ public static class JavlibraryClient
         {
             releaseDate = DateTime.ParseExact("0000-00-00", "yyyy-MM-dd", System.Globalization.CultureInfo.InvariantCulture);
         }
-
 
         return new Api.Video(
             id: id,

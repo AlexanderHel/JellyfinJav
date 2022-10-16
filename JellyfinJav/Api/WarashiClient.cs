@@ -23,11 +23,11 @@ public static class WarashiClient
     {
         var form = new FormUrlEncodedContent(new[]
         {
-                new KeyValuePair<string?, string?>("recherche_critere", "f"),
-                new KeyValuePair<string?, string?>("recherche_valeur", searchName),
-                new KeyValuePair<string?, string?>("x", "0"),
-                new KeyValuePair<string?, string?>("y", "0"),
-            });
+            new KeyValuePair<string?, string?>("recherche_critere", "f"),
+            new KeyValuePair<string?, string?>("recherche_valeur", searchName),
+            new KeyValuePair<string?, string?>("x", "0"),
+            new KeyValuePair<string?, string?>("y", "0"),
+        });
 
         var response = await HttpClient.PostAsync("http://warashi-asian-pornstars.fr/en/s-12/search", form).ConfigureAwait(false);
         var html = await response.Content.ReadAsStringAsync().ConfigureAwait(false);
@@ -64,11 +64,11 @@ public static class WarashiClient
     {
         var form = new FormUrlEncodedContent(new[]
         {
-                new KeyValuePair<string?, string?>("recherche_critere", "f"),
-                new KeyValuePair<string?, string?>("recherche_valeur", searchName),
-                new KeyValuePair<string?, string?>("x", "0"),
-                new KeyValuePair<string?, string?>("y", "0"),
-            });
+            new KeyValuePair<string?, string?>("recherche_critere", "f"),
+            new KeyValuePair<string?, string?>("recherche_valeur", searchName),
+            new KeyValuePair<string?, string?>("x", "0"),
+            new KeyValuePair<string?, string?>("y", "0"),
+        });
 
         var response = await HttpClient.PostAsync("http://warashi-asian-pornstars.fr/en/s-12/search", form).ConfigureAwait(false);
         var html = await response.Content.ReadAsStringAsync().ConfigureAwait(false);
